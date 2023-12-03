@@ -9,29 +9,30 @@ def center(trt):
     trt.pendown()
 
 def drawCircle():
+    c.begin_fill()
     c.hideturtle()
+    dot.hideturtle()
     c.circle(200)
     c.penup()
-    # c.write("VI",align="center", font=("serif", 25, "normal"))
-    # c.left(90)
-    # c.forward(367)
-    # c.write("XII", align="center", font=("serif", 25, "normal"))
-    # c.right(180)
-    # c.forward(167)
-    # c.right(90)
-    # c.forward(193)
-    # c.write("IX", align="left", font=("serif", 25, "normal"))
-    # c.right(180)
-    # c.forward(393)
-    # c.write("III", align="right", font=("serif", 25, "normal"))
     time_in_roman = ['VI', 'III', 'XII', 'IX']
     c.right(45)
     for i in range(4):
         c.write(time_in_roman[i], align="center", font=("serif", 25, "normal"))
         c.left(90)
         c.forward(255)
+    c.end_fill()
 
-
+    dot.right(14)
+    for i in range(13):
+        if i % 3 != 0:
+            dot.write(".", font=("serif", 35, "normal"))
+        else:
+            dot.write("")
+        dot.left(30)
+        dot.forward(98)
+    turtle.penup()
+    turtle.goto(0, 200)
+    turtle.dot(20, "black")
 
 
 
@@ -52,14 +53,18 @@ def second(a):
     s.setheading(a)
     s.forward(170)
 
-c = turtle.Turtle()        # create alex
+c = turtle.Turtle()
 h = turtle.Turtle()
 m = turtle.Turtle()
 s = turtle.Turtle()
+dot = turtle.Turtle()
+
 c.pensize(6)
-h.pensize(5)
-m.pensize(4)
-s.pensize(3)
+c.fillcolor("lightgreen")
+dot.pensize(1), dot.pencolor("red")
+h.pensize(5), h.pencolor("White")
+m.pensize(4), m.pencolor("White")
+s.pensize(3), s.pencolor("White")
 drawCircle()
 
 center(h)
@@ -67,6 +72,7 @@ center(m)
 center(s)
 
 while True:
+
     # Get the current time
     current_time = time.localtime()
     hr = current_time.tm_hour % 12  # 12-hour format
