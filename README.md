@@ -10,13 +10,15 @@ representation of time, with hands that move in real-time and a digital display 
 the current hour, minute, and second.
 
 
-#Getting Started
+# Getting Started
 
 **Clone the repository to your local machine**
 
 **Run the Python script:**
 
- ``` main.py ```
+ ``` 
+ main.py
+ ```
 
 **Explore and Enjoy:** 
 The clock will update in real-time, providing both an analog and digital representation of the current time.
