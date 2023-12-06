@@ -87,7 +87,6 @@ def hour(a):
     h.left(180)
     h.forward(120)
 
-
 # Set Minute Arm
 def minute(a):
     m.speed(1000)
@@ -96,7 +95,6 @@ def minute(a):
     m.forward(30)
     m.left(180)
     m.forward(165)
-
 
 # Set the Second Arm
 def second(a):
@@ -108,8 +106,7 @@ def second(a):
     s.left(180)
     s.forward(200)
 
-
-
+######################################################################################
 
 c = turtle.Turtle()                     # c is for the circle turtle
 cc = turtle.Turtle()
@@ -119,10 +116,6 @@ s = turtle.Turtle()                     # s is for the second clock turtle
 dot = turtle.Turtle()                   # dot is for number indicators
 box = turtle.Turtle()
 num = turtle.Turtle()
-
-
-
-
 box.fillcolor("lightgrey")
 c.pensize(6)
 cc.pensize(5)
