@@ -7,7 +7,7 @@ Wall Clock project
 This Python project utilizes the Turtle graphics library to create a stylish wall clock that 
 features both analog and digital displays. The clock provides a visually pleasing 
 representation of time, with hands that move in real-time and a digital display showing 
-the current hour, minute, and second.
+the current hour and minute.
 
 
 # Getting Started
