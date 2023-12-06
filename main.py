@@ -1,5 +1,13 @@
-import turtle
-import time
+# CNE330, Fall 2023
+# Yeabsira Moges
+# Wall Clock
+# The wall clock features an analog display with hour, minute, and second hands, all drawn with the Turtle module.
+
+
+
+
+import turtle, time
+
 
 # Positioning the turtles to center
 def center(trt):
